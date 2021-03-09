@@ -1,0 +1,30 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "3",
+    "parcel": "1.12.3",
+    "parcel-bundler": "1.12.3"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 1%,last 2 versions,not ie <= 8",
+        "useBuiltIns": "usage",
+        "corejs": "3"
+      }
+    ]
+  ]
+}
