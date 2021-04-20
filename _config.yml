@@ -1,1 +1,14 @@
 theme: jekyll-theme-cayman
+
+include: index.html
+
+auto: true
+
+defaults:
+  # _pages
+  - scope:
+      path: "src"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
