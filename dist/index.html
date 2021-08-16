@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <title>朱荣富-前端开发-13279273223</title>
     <link rel="dns-prefetch" href="//cdn.cn/">
+    <!-- 标准A4排版 -->
     <style>* {
         box-sizing: border-box;
       }
@@ -23,6 +24,7 @@
         overflow: auto;
         padding: 1em;
       }</style>
+    <!-- 打印样式 -->
     <style media="print">body {
         margin: 0;
       }
@@ -31,6 +33,7 @@
         page-break-before: always; /*分页*/
         margin-top: 30px;
       }</style>
+    <!-- 通用Reset -->
     <style>body {
       }
 
@@ -93,6 +96,7 @@
         right: 0;
       }</style>
 
+    <!-- 项目经历 -->
     <style>.projects {
       }
 
@@ -122,6 +126,7 @@
       .projects > ol > li h3 {
         display: inline-block;
       }</style>
+    <!-- 技能图谱 -->
     <style>.skills {
       }
 
@@ -187,6 +192,7 @@
 
       .open-source h3 {
       }</style>
+    <!-- 工作经历 -->
     <style>.jobs {
       }
 
@@ -219,8 +225,22 @@
       .jobs header > span {
         font-size: 18px;
         margin-left: auto;
+      }
+
+      .jobs p.tags {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+      }
+
+      .jobs p.tags code {
+        margin: 0;
+        padding: .2em .4em;
+        background: rgba(175, 184, 193, .4) !important;
+        border-radius: 4px;
+        vertical-align: top;
       }</style>
 
+    <!-- 自适应 -->
     <style>@media (max-width: 500px) {
         body {
           margin: 0;
@@ -259,6 +279,7 @@
     <article>
       <section class="bio">
         <h1>朱荣富</h1>
+        <!-- 不走CDN，减少依赖风险 -->
         <img src="/me.ee1a4e9a.jpg" alt="朱荣富" width="100" height="110">
         <p>26岁 | 前端开发 | 2年工作经验 | 已离职 | 上海 | CET-6</p>
         <p>手机：13279273223(微信同号) | 邮箱：matthrews@outlook.com</p>
@@ -285,26 +306,39 @@
         <ol>
           <li>
             <header>
-              <h3>万得信息技术股份有限公司</h3>
-              <h4>前端开发工程师</h4>
+              <h3>掌门一对一</h3>
+              <h4>前端开发工程师(题库中台)</h4>
+              <span><time>2021年5月</time>~<time>2021年8月</time></span>
+            </header>
+            <p class="tags">
+              <code>跨端业务开发</code>
+              <code>UI组件库</code>
+              <code>前端基建支持</code>
+              <code>Git Flow + CI/CD</code>
+              <code>跨部门沟通</code>
+            </p>
+            <p>负责 <strong>跨端答题</strong> 新需求的开发和跨部门对接</p>
+            <p>持续践行 <strong> 代码规范和 Git Flow </strong></p>
+            <p>参与 <strong>UI组件库</strong> 开发</p>
+            <p>参与前端基建项目开发【<strong>typescript-doc-gen</strong>】，已在小组内部广泛使用</p>
+          </li>
+          <li>
+            <header>
+              <h3>万得资讯</h3>
+              <h4>前端开发工程师(风控业务)</h4>
               <span><time>2019年7月</time>~<time>2021年4月</time></span>
             </header>
+            <p class="tags">
+              <code>主力开发</code>
+              <code>框架搭建</code>
+              <code>开发规范</code>
+              <code>新人指导</code>
+            </p>
             <p>负责金融市场监控等多个模块的维护与开发工作</p>
             <p><strong>独立负责</strong>部门融合项目【企业风险监控】两个版本的维护与后续开发工作</p>
             <p>负责前端项目<strong>Webpack打包</strong>、单元测试、文档撰写等工作</p>
             <p>负责【风险预警系统新版】<strong>框架搭建，开发规范实施</strong>，以及70%的项目开发，有两个新同学协助</p>
             <p>在部门内，作为前端骨干，负责给前端较弱的同学进行<strong>培训</strong>，提高其前端开发工作效率</p>
-          </li>
-          <li>
-            <header>
-              <h3>掌门一对一</h3>
-              <h4>前端开发工程师(中台)</h4>
-              <span><time>2021年5月</time>~<time>2021年7月</time></span>
-            </header>
-            <p>负责三端答题新需求的开发和跨部门对接</p>
-            <p>持续践行<strong>代码规范和git工作流</strong></p>
-            <p>参与<strong>UI组件库</strong>开发</p>
-            <p>参与前端基建项目开发【<strong>typescript-doc-gen</strong>】，已在小组内部广泛使用</p>
           </li>
         </ol>
       </section>
@@ -322,11 +356,10 @@
             </header>
             <p>一个用于展示金融专题统计数据的多功能表格</p>
             <p>
-              主要功能有:
+              表格主要特性:
               <ul>
-                <li>单元格可编辑，支持多种数据格式；</li>
-                <li>列筛选，列排序，列可配置，列固定，列宽可变，列顺序可变；行转置，行选中，跨行选中</li>
-                <li>键盘操作；<strong>丝滑滚动</strong>(虚拟渲染 / 分页请求 / 整行滚动)；可视化；导出Excel</li>
+                <li>单元格可编辑，筛选，排序，配置列，固定列，列宽可变，转置，跨行选中</li>
+                <li>键盘操作，<strong>虚拟滚动</strong>，可视化，导出Excel</li>
               </ul>
             </p>
             <p><strong>造轮子</strong>过程中让我对<strong>页面性能分析</strong>有了一定的认识，并将我的经验总结发表博客</p>
@@ -382,6 +415,35 @@
             </p>
             <p>负责旧版维护打包，让我对 <strong>Webpack打包优化</strong> 有了一定的实践，并将优化分析进行总结发布博客</p>
           </li>
+          <li>
+            <header>
+              <h3>答题服务</h3>
+              <!-- <span>
+                <a target="_blank" href="#">源码私有</a>
+                <a target="_blank" href="#">项目预览</a>
+              </span> -->
+            </header>
+            <p>
+              基于 <strong>React</strong> /
+              <strong>TypeScript</strong> /
+              <strong>Babel</strong> /
+              <strong>Webpack@5</strong> /
+              <strong>DSBridge</strong>
+            </p>
+            <p>
+              全链路答题解决方案，包括答题，搜题，标签化，监控等模块，解决答题，考试，错题本，报告等业务需求
+            </p>
+            <p>
+              移动端使用 <strong>DSBridge</strong> 进行跨平台通信，Web端使用 <strong>postMeasge</strong> 通信
+            </p>
+            <p>
+              参与 <strong>Code Review</strong>、 <strong>CI/CD</strong> 等最佳实践
+            </p>
+            <p>
+              使用 <strong>createContext</strong> 实现状态管理，使用 <strong>Hooks封装API</strong>，使用Hooks进行 <strong>组件性能优化</strong>
+            </p>
+            <p><strong>Webpack打包优化</strong> ，入口文件打包体积显著减小</p>
+          </li>
         </ol>
       </section>
 
@@ -393,7 +455,7 @@
               <h3>博客网站</h3>
               <span>
                 <a target="_blank" href="https://github.com/Matthrews/nextjs-typeorm-bloger">源码链接</a>
-                <a target="_blank" href="http://8.130.29.92:3000/">项目预览</a>
+                <!-- <a target="_blank" href="http://8.130.29.92:3000/">项目预览</a> -->
               </span>
             </header>
             <p>
@@ -404,7 +466,7 @@
             <header>
               <h3>TSX interface 转 Markdown工具</h3>
               <span>
-                <a target="_blank" href="https://www.npmjs.com/package/typescript-doc-gen">项目预览</a>
+                <a target="_blank" href="https://www.npmjs.com/package/typescript-doc-gen">源码链接</a>
               </span>
             </header>
             <p>基于AST，支持命令行, 自动分析依赖 </p>
@@ -414,7 +476,7 @@
               <h3>Electron+Webpack项目模板</h3>
               <span>
                 <a target="_blank" href="https://github.com/Matthrews/electron-cra-boilerplate">源码链接</a>
-                <a target="_blank" href="https://github.com/Matthrews/electron-cra-boilerplate">项目预览</a>
+                <!-- <a target="_blank" href="https://github.com/Matthrews/electron-cra-boilerplate">项目预览</a> -->
               </span>
             </header>
             <p>我在学习 <strong>Electron</strong> 时做的一个模板，让我对 Electron 和 Webpack 的结合产生了浓厚的兴趣</p>
@@ -425,14 +487,15 @@
       <section class="others">
         <h2>其他链接</h2>
         <ul>
-          <li><a target="_blank" href="http://8.130.29.92:3000/posts">我的博客</a>，目前已有 21 篇技术文章</li>
-          <li><a target="_blank" href="https://github.com/Matthrews">我的 GitHub</a>，过去三个月有 250 次提交</li>
+          <!-- <li><a target="_blank" href="http://8.130.29.92:3000/posts">我的博客</a>，目前已有 21 篇技术文章</li> -->
+          <li><a target="_blank" href="https://matthrews.github.io/bloger/">我的博客</a>，目前已有 <strong>30</strong> 篇技术文章</li>
+          <li><a target="_blank" href="https://github.com/Matthrews">我的 GitHub</a>，过去一年里有 <strong>600</strong> 次提交</li>
         </ul>
       </section>
 
       <section class="education">
         <h2>教育经历</h2>
-        <p><span><time>2015年</time>~<time>2019年</time></span> 陕西科技大学 数学系 信息与计算科学 全日制本科</p>
+        <p><span><time>2015年</time>~<time>2019年</time></span> 陕西科技大学 数学系 信息与计算科学 <strong>全日制本科</strong></p>
       </section>
       <section class="practice">
         <h2>在校实践</h2>
@@ -440,7 +503,7 @@
         <p>校外自主社会实践负责人，去过苏州、上海、广东等地</p>
       </section>
     </article>
-    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.1/echarts.min.js"></script>
+    <script src="//cdn.bootcdn.net/ajax/libs/echarts/5.0.1/echarts.min.js"></script>
     <script type="text/javascript" src="/main.1f19ae8e.js"></script>
   </body>
 </html>
