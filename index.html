@@ -286,35 +286,82 @@
 <body>
   <article>
     <section class="bio">
-      <h1>朱荣富</h1>
-      <p>26岁 | 前端开发 | 3年工作经验 | 上海 | CET-6</p>
-      <p>手机：13279273223(微信同号) | 邮箱：matthrews@outlook.com</p>
+      <h1>
+        朱荣富
+        <!--{en} Zhu Rongfu -->
+      </h1>
+
+      <p>
+        26岁 | 前端开发 | 3年工作经验 | 上海 | CET-6
+        <!--{en} Age: 26 | Position: Front-end development | Experience: 3 years | City: ShangHai -->
+      </p>
+      <p>
+        手机：13279273223(微信同号) | 邮箱：matthrews@outlook.com
+        <!--{en} Phone: 13279273223(WeChat ID) | Email: matthrews@outlook.com -->
+      </p>
     </section>
 
     <section class="jobs">
-      <h2>工作经历</h2>
+      <h2>
+        工作经历
+        <!--{en} Experience-->
+      </h2>
       <ol>
         <li>
           <header>
-            <h3>零米信息</h3>
-            <h4>高级前端开发工程师</h4>
-            <span><time>2021年</time>~<time>至今</time></span>
+            <h3>
+              零米信息
+              <!--{en} OpsMind -->
+            </h3>
+            <h4>
+              高级前端开发工程师
+              <!--{en} Senior Front-end Development  -->
+            </h4>
+            <span><time>
+                2021年8月
+                <!--{en} Aug 2021  -->
+              </time>~<time>
+                至今
+                <!--{en} Until now -->
+              </time></span>
           </header>
           <p class="tags">
             <code>低代码平台改造</code>
             <code>业务组件库</code>
             <code>打包优化</code>
           </p>
-          <p>负责公司官网所有模块的开发与维护</p>
-          <p>低代码平台逐步改造，替换UI组件库，优化项目打包，接口SDK化， 自定义 Hook</p>
+          <p>
+            负责公司官网所有模块的开发与维护
+            <!--{en} develop company's website  -->
+          </p>
+          <p>低代码平台逐步改造，替换UI组件库，优化项目打包，接口SDK化， 自定义 Hook
+          </p>
           <p>移动端， IE兼容问题处理</p>
+        </li>
+
+        <li>
+          <header>
+            <h3>掌门一对一</h3>
+            <h4>前端开发工程师(题库中台)</h4>
+            <span><time>2021年5月</time>~<time>2021年8月</time></span>
+          </header>
+          <p class="tags">
+            <code>跨端业务开发</code>
+            <code>UI组件库</code>
+            <code>前端基建支持</code>
+            <code>Git Flow + CI/CD</code>
+            <code>跨部门沟通</code>
+          </p>
+          <p>负责跨端答题新需求的开发和跨部门对接</p>
+          <p>持续践行代码规范和Git Flow </p>
+          <p>参与UI组件库开发</p>
         </li>
 
         <li>
           <header>
             <h3>万得资讯</h3>
             <h4>前端开发工程师(风控业务)</h4>
-            <span><time>2019年</time>~<time>2021年</time></span>
+            <span><time>2019年7月</time>~<time>2021年4月</time></span>
           </header>
           <p class="tags">
             <code>主力开发</code>
@@ -395,6 +442,31 @@
             该应用上线后广受好评，已将成功案列应用到各事业部
           </p>
           <p>该项目大量使用Redux，让我对<strong> 状态管理 </strong>有了一定认识</p>
+        </li>
+        <li>
+          <header>
+            <h3>答题服务</h3>
+            <!-- <span>
+                <a target="_blank" href="#">源码私有</a>
+                <a target="_blank" href="#">项目预览</a>
+              </span> -->
+          </header>
+          <p>
+            基于React/TypeScript/Babel/Webpack@5/DSBridge
+          </p>
+          <p>
+            全链路答题解决方案，包括答题，搜题，标签化，监控等模块，解决答题，考试，错题本，报告等业务需求
+          </p>
+          <p>
+            移动端使用DSBridge进行跨平台通信，Web端使用postMeasge通信
+          </p>
+          <p>
+            参与Code Review、CI/CD等最佳实践
+          </p>
+          <p>
+            使用createContext实现状态管理，<strong>使用Hooks封装API</strong>，使用Hooks进行组件性能优化
+          </p>
+          <p>Webpack打包优化，入口文件打包体积显著减小</p>
         </li>
         <li>
           <header>
@@ -479,6 +551,9 @@
   </article>
   <!-- <script src="//cdn.bootcdn.net/ajax/libs/echarts/5.0.1/echarts.min.js"></script> -->
   <!-- <script type="text/javascript" src="./main.js"></script> -->
+  <script type="text/javascript" src="//unpkg.com/translater.js/dist/translater.min.js"></script>
+  <!-- <script src="https://cdn.bootcdn.net/ajax/libs/translater.js/1.0.9/translater.min.js"></script> -->
+  <script type="text/javascript" src="./intl.js"></script> -->
 </body>
 
 </html>
