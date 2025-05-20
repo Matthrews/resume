@@ -17,7 +17,7 @@ window.addEventListener("hashchange", () => {
 });
 
 // 卸载监听
-window.onunload = function () {
+window.onbeforeunload = function () {
   window.removeEventListener("load", () => {
     setLangByURL(location.search);
   });
